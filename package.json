@@ -1,0 +1,26 @@
+{
+  "name": "billboard",
+  "version": "0.0.1",
+  "description": "rest api for bargain",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "tsc && node dist/server.js",
+    "test": "tsc && mocha --reporter spec --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:rs-tools/bargain/billboard.git"
+  },
+  "author": "Ray Sun",
+  "license": "ISC",
+  "dependencies": {
+    "restify": "^8.2.0",
+    "restify-router": "^0.5.1",
+    "bargain-dao": "file:../dao"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.0",
+    "@types/restify": "^7.2.9",
+    "restify-cors-middleware": "^1.1.1"
+  }
+}
